@@ -11,7 +11,10 @@ export const debugEnvironmentVariables = () => {
     console.log('import.meta.env.VITE_AZURE_FUNCTIONS_KEY:', import.meta.env.VITE_AZURE_FUNCTIONS_KEY);
     
     // Check if window.ENV exists
-    if (typeof window !== 'undefined' && (window as any).ENV) {
+    if (typeof window !== 'undefined' &&
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (window as any).ENV) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         console.log('window.ENV.VITE_AZURE_FUNCTIONS_KEY:', (window as any).ENV.VITE_AZURE_FUNCTIONS_KEY);
     } else {
         console.log('window.ENV: Not available (development mode)');

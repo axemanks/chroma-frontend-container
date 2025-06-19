@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist-test",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "allowImportingTsExtensions": false
+  },
+  "include": [
+    "src",
+    "src/utils/__tests__/**/*.ts"
+  ]
+}

@@ -31,7 +31,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "version:display": "node -e \"const pkg=require('./package.json'); console.log('🚀 Build completed for version:', pkg.version); console.log('📅 Built on:', pkg.buildInfo?.buildDate || 'Unknown');\"",
-    "version:reset": "npm version 1.0.0 --no-git-tag-version"
+    "version:reset": "npm version 1.0.0 --no-git-tag-version",
+    "test": "node scripts/run-tests.mjs"
   },
   "dependencies": {
     "@azure/msal-browser": "^4.13.1",
