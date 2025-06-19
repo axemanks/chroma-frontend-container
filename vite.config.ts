@@ -5,4 +5,9 @@ import { viteVersionPlugin } from './plugins/vite-version-plugin';
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react(), viteVersionPlugin()],
+    test: {
+        globals: true,
+        environment: 'jsdom',
+        setupFiles: './src/setupTests.ts',
+    },
 });
