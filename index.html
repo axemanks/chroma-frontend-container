@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- App Title -->
+    <title>Blue Edge Collections API Portal</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Blue Edge Collections API Portal - Document management and search interface powered by ChromaDB and Azure AI" />
+    <meta name="keywords" content="document management, search, API, ChromaDB, Azure AI, collections" />
+    <meta name="author" content="Keith Scheldt" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Blue Edge Collections API Portal" />
+    <meta property="og:description" content="Document management and search interface powered by ChromaDB and Azure AI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Blue Edge Collections API Portal" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Blue Edge Collections API Portal" />
+    <meta name="twitter:description" content="Document management and search interface powered by ChromaDB and Azure AI" />
+
+    <!-- Theme Color for Mobile -->
+    <meta name="theme-color" content="#1976d2" />
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Load runtime environment variables (injected by Docker container) -->
+    <script src="/env.js"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

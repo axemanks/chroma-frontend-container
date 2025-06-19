@@ -1,0 +1,21 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+  },
+  "routes": [
+    {
+      "route": "/*",
+      "allowedRoles": ["anonymous"]
+    }
+  ],
+  "mimeTypes": {
+    ".json": "application/json"
+  },
+  "globalHeaders": {
+    "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://login.microsoftonline.com; connect-src 'self' https://login.microsoftonline.com https://graph.microsoft.com https://*.azurewebsites.net http://localhost:7071 http://localhost:* ws://localhost:*; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; frame-src 'self' https://login.microsoftonline.com;"
+  },
+  "platform": {
+    "apiRuntime": "node:18"
+  }
+}

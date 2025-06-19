@@ -1,0 +1,22 @@
+# Dependencies and build artifacts
+node_modules
+dist
+
+# Git files
+.git
+.gitignore
+
+# Development files
+.env.local
+.env
+.vscode
+*.log
+
+# Documentation (optional, remove if you want docs in container)
+*.md
+README.md
+
+# Don't exclude these - Docker needs them:
+# env-inject.sh
+# nginx.conf
+# Dockerfile
